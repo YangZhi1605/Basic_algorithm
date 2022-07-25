@@ -26,7 +26,7 @@ void qui_sort(int a[],int l,int r)
         if(i < j) swap(a[i],a[j]);
     }
     
-    qui_sort(a,l,j);
+    qui_sort(a,l,j); //快排这儿只能写j,有点迷糊是为什么 
     qui_sort(a,j+1,r);
 }
 
