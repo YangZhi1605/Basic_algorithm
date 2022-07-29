@@ -1,4 +1,7 @@
-快速排序算法模板 —— 模板题 AcWing 785. 快速排序
+### 快速排序算法模板 —— 模板题 AcWing 785. 快速排序
+
+
+
 ```
 void quick_sort(int q[], int l, int r)
 {
@@ -14,7 +17,8 @@ void quick_sort(int q[], int l, int r)
     quick_sort(q, l, j), quick_sort(q, j + 1, r);
 }
 ```
-归并排序算法模板 —— 模板题 AcWing 787. 归并排序
+### 归并排序算法模板 —— 模板题 AcWing 787. 归并排序
+
 ```
 void merge_sort(int q[], int l, int r)
 {
@@ -35,7 +39,8 @@ void merge_sort(int q[], int l, int r)
     for (i = l, j = 0; i <= r; i ++, j ++ ) q[i] = tmp[j];
 }
 ```
-整数二分算法模板 —— 模板题 AcWing 789. 数的范围
+### 整数二分算法模板 —— 模板题 AcWing 789. 数的范围
+
 ```
 bool check(int x) {/* ... */} // 检查x是否满足某种性质
 
@@ -62,7 +67,8 @@ int bsearch_2(int l, int r)
     return l;
 }
 ```
-浮点数二分算法模板 —— 模板题 AcWing 790. 数的三次方根
+### 浮点数二分算法模板 —— 模板题 AcWing 790. 数的三次方根
+
 ```
 bool check(double x) {/* ... */} // 检查x是否满足某种性质
 
@@ -78,7 +84,8 @@ double bsearch_3(double l, double r)
     return l;
 }
 ```
-高精度加法 —— 模板题 AcWing 791. 高精度加法
+###高精度加法 —— 模板题 AcWing 791. 高精度加法
+
 ```
 // C = A + B, A >= 0, B >= 0
 vector<int> add(vector<int> &A, vector<int> &B)
@@ -99,7 +106,8 @@ vector<int> add(vector<int> &A, vector<int> &B)
     return C;
 }
 ```
-高精度减法 —— 模板题 AcWing 792. 高精度减法
+###高精度减法 —— 模板题 AcWing 792. 高精度减法
+
 ```
 // C = A - B, 满足A >= B, A >= 0, B >= 0
 vector<int> sub(vector<int> &A, vector<int> &B)
@@ -118,7 +126,8 @@ vector<int> sub(vector<int> &A, vector<int> &B)
     return C;
 }
 ```
-高精度乘低精度 —— 模板题 AcWing 793. 高精度乘法
+###高精度乘低精度 —— 模板题 AcWing 793. 高精度乘法
+
 ```
 // C = A * b, A >= 0, b >= 0
 vector<int> mul(vector<int> &A, int b)
@@ -138,7 +147,8 @@ vector<int> mul(vector<int> &A, int b)
     return C;
 }
 ```
-高精度除以低精度 —— 模板题 AcWing 794. 高精度除法
+###高精度除以低精度 —— 模板题 AcWing 794. 高精度除法
+
 ```
 // A / b = C ... r, A >= 0, b > 0
 vector<int> div(vector<int> &A, int b, int &r)
@@ -156,32 +166,39 @@ vector<int> div(vector<int> &A, int b, int &r)
     return C;
 }
 ```
-一维前缀和 —— 模板题 AcWing 795. 前缀和
+###一维前缀和 —— 模板题 AcWing 795. 前缀和
+
 ```
 S[i] = a[1] + a[2] + ... a[i]
 a[l] + ... + a[r] = S[r] - S[l - 1]
 ```
-二维前缀和 —— 模板题 AcWing 796. 子矩阵的和
+###二维前缀和 —— 模板题 AcWing 796. 子矩阵的和
+
 ```
 S[i, j] = 第i行j列格子左上部分所有元素的和
 以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵的和为：
 S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
 ```
-一维差分 —— 模板题 AcWing 797. 差分
+###一维差分 —— 模板题 AcWing 797. 差分
+
 ```
 给区间[l, r]中的每个数加上c：B[l] += c, B[r + 1] -= c
 ```
-二维差分 —— 模板题 AcWing 798. 差分矩阵
+###二维差分 —— 模板题 AcWing 798. 差分矩阵
+
 ```
 给以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵中的所有元素加上c：
 S[x1, y1] += c, S[x2 + 1, y1] -= c, S[x1, y2 + 1] -= c, S[x2 + 1, y2 + 1] += c
 ```
-位运算 —— 模板题 AcWing 801. 二进制中1的个数
+###位运算 —— 模板题 AcWing 801. 二进制中1的个数
+
 ```
 求n的第k位数字: n >> k & 1
 返回n的最后一位1：lowbit(n) = n & -n
 ```
-双指针算法 —— 模板题 AcWIng 799. 最长连续不重复子序列, AcWing 800. 数组元素的目标和
+### 双指针算法 —— 模板题 AcWIng 799. 最长连续不重复子序列, AcWing 800. 数组元素的目标和
+
+
 ```
 for (int i = 0, j = 0; i < n; i ++ )
 {
@@ -192,8 +209,10 @@ for (int i = 0, j = 0; i < n; i ++ )
 常见问题分类：
     (1) 对于一个序列，用两个指针维护一段区间
     (2) 对于两个序列，维护某种次序，比如归并排序中合并两个有序序列的操作
-````
-离散化 —— 模板题 AcWing 802. 区间和
+
+```
+
+### 离散化 —— 模板题 AcWing 802. 区间和
 ```
 vector<int> alls; // 存储所有待离散化的值
 sort(alls.begin(), alls.end()); // 将所有值排序
@@ -212,7 +231,7 @@ int find(int x) // 找到第一个大于等于x的位置
     return r + 1; // 映射到1, 2, ...n
 }
 ```
-区间合并 —— 模板题 AcWing 803. 区间合并
+###区间合并 —— 模板题 AcWing 803. 区间合并
 ```
 // 将所有存在交集的区间合并
 void merge(vector<PII> &segs)
@@ -240,3 +259,6 @@ void merge(vector<PII> &segs)
 链接：https://www.acwing.com/blog/content/277/
 来源：AcWing
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
+```
